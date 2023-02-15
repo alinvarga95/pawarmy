@@ -48,7 +48,7 @@ position: relative;
  .nav-links ul li::after{
     content:"";
 width:0%;
-height:2px;
+height:1px;
 background: rgb(255, 215, 134);
 display:block;
 margin:auto;
@@ -99,17 +99,11 @@ transition:0.5s;
     cursor: pointer;
 }
 
-.hero-btn:hover{
-border: 1px solid rgb(255, 215, 134);
-background: rgb(255, 215, 134);
 
-}
 .hero-btn:hover{
-border:1px solid rgb(255,215,134);
-background: rgb(255,215,134);
-transition: 1s;
-
-}
+    border:1px solid rgb(255,215,134);
+    background: rgb(255,215,134);
+    transition: 1s;
 
 @media(max-width:700px){
     .text-box h1{

@@ -1,0 +1,10 @@
+.hero-btn:hover{
+border: 1px solid rgb(255, 215, 134);
+background: rgb(255, 215, 134);
+
+}
+
+.hero-btn:hover{
+border:1px solid rgb(255,215,134);
+background: rgb(255,215,134);
+transition: 1s;
