@@ -121,3 +121,11 @@ transition:0.5s;
 	position: relative;
 }
 
+
+.slide {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
