@@ -1,125 +1,3 @@
-*{
-    margin: 0;
-padding: 0;
-font-family: 'Poppins', sans-serif;
-
-}
-.header{
-   
-    min-height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-color:gainsboro;
-    background-size: cover;
-    position: relative;
-}
-nav{
-display: flex;
-padding: 0% 0%;
-justify-content:center;
-align-items: center;
-
-
-
-}
-
-.nav-links{ 
-
-    flex:1;
-    text-align:right;
-
-}
-.nav-links ul li{
-
-    color:rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 15px;
-
- }
-.nav-links ul li{
-list-style: none;
-display: inline-block;
-padding: 8px 12px;
-position: relative;
-
- }
-
- 
- .nav-links ul li::after{
-    content:"";
-width:0%;
-height:2px;
-background: rgb(255, 215, 134);
-display:block;
-margin:auto;
-transition:0.5s;
-
-}
-
-.nav-links ul li:hover::after{
-    width: 100%;
-}
-.text-box{
-
-    width:90%;
-    color:rgb(0, 0, 0);
-    position:absolute;
-    top:30%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    text-align:center;
-
-}
-
-
-
-@media(max-width:700px){
-    .text-box h1{
-        font-size: 15px;
-    }
-
-
-}
-.container {
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-	position: relative;
-}
-
-.container {
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-	position: relative;
-}
-
-.container {
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-	position: relative;
-}
-
-.container {
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-	position: relative;
-}
-
-.container {
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-	position: relative;
-}
-.container {
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-	position: relative;
-}
 
 
 .slide {
@@ -129,3 +7,51 @@ transition:0.5s;
     cursor: pointer;
   }
   
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+}
+
+.item h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.item p {
+    margin: 10px 0;
+}
