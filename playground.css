@@ -1,16 +1,5 @@
-
-
-.slide {
-    background-color: lightblue;
-    padding: 20px;
-    margin: 20px;
-    cursor: pointer;
-  }
-  
-
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f2f2f2;
     margin: 0;
 }
@@ -19,16 +8,18 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    text-align: center;
 }
 
 h1 {
     margin: 0;
+    font-size: 3em;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px;
 }
 
@@ -37,21 +28,41 @@ main {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 20px;
     max-width: 300px;
     text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .item img {
     max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .item h2 {
-    font-size: 1.2em;
+    font-size: 1.8em;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .item p {
+    font-size: 1.2em;
     margin: 10px 0;
 }
+
+.item button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.2s ease-in
