@@ -1,70 +1,109 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Pet Shop</title>
+    <title>About Us</title>
     <style>
-         <meta charset="UTF-8">
-    <meta hhtp-equiv="X-UA-compatible" content="IE=edge"
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css"
+      /* Set up the main page layout */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: #f8f8f8;
+        height: 80px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+      }
+      #logo {
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
+        text-transform: uppercase;
+      }
+      nav {
+        background-color: #333;
+        height: 60px;
+        padding: 10px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      nav li {
+        margin: 0 20px;
+      }
+      nav a {
+        color: #f8f8f8;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      /* Add some interactivity with JavaScript */
+      #team-members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .team-member {
+        width: 300px;
+        margin: 20px;
+        text-align: center;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+      .team-member:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+      }
+      .team-member img {
+        width: 100%;
+        height: auto;
+      }
+      .team-member h3 {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+      .team-member p {
+        font-size: 16px;
+        margin: 10px 0;
+      }
     </style>
   </head>
   <body>
-    <div class="transition transition1 is-active"></div>
- 
     <header>
-      <h1>Welcome to My Pet Shop</h1>
-      <nav>
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </nav>
+      <h1 id="logo">Paw Army</h1>
     </header>
-    
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
     <main>
-      <section id="services">
-        <h2>Our Services</h2>
-        <p>We offer a range of services to help take care of your pets:</p>
-        <ul>
-          <li>Veterinary care</li>
-          <li>Grooming</li>
-          <li>Boarding</li>
-          <li>Dog walking</li>
-        </ul>
-      </section>
-      
-      <section id="products">
-        <h2>Our Products</h2>
-        <p>We sell a variety of pet products to meet your pet's needs:</p>
-        <ul>
-          <li>Dog food</li>
-          <li>Cat food</li>
-          <li>Leashes and collars</li>
-          <li>Toys</li>
-        </ul>
-      </section>
-      
-      <section id="about">
-        <h2>About Us</h2>
-        <p>We are a family-owned pet shop that has been serving the community for over 20 years. We are passionate about pets and are committed to providing the best care and products for your furry friends.</p>
-      </section>
-      
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or would like to schedule an appointment, please don't hesitate to reach out to us:</p>
-        <ul>
-          <li>Phone: 555-1234</li>
-          <li>Email: info@mypetshop.com</li>
-          <li>Address: 123 Main Street, Anytown, USA</li>
-        </ul>
-      </section>
-    </main>
-    
-    <footer>
-      <p>Copyright © 2023 My Pet Shop</p>
-    </footer>
-  </body>
-</html>
+      <h1>About Us</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pro
