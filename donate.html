@@ -2,47 +2,25 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Donate</title>
-	<style>
-	
-		body {
-			background-image: url("https://img.freepik.com/free-photo/cute-animals-group-white-background_23-2150038555.jpg?w=826&t=st=1682944283~exp=1682944883~hmac=78fa2ee619cf9dec693e53a70942032d210182f9d85e0c7e1b01e4cfc0289800");
-			background-size: cover;
-			background-position: center;
-		}
-		
-		body {
-			font-family: Arial, sans-serif;
-			background-color: #f2f2f2;
-		}
-		
-		h1 {
-			color: #333;
-			text-align: center;
-			margin-top: 50px;
-		}
-		
-		button {
-			background-color: #4CAF50;
-			color: white;
-			border: none;
-			padding: 15px 32px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-			margin-top: 50px;
-			cursor: pointer;
-			transition: background-color 0.3s ease;
-		}
-		
-		button:hover {
-			background-color: #3e8e41;
-		}
-	</style>
+	<title>Donation Button Example</title>
+	<!-- include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-	<h1>PAW ARMY</h1>
-	<button onclick="alert('Thank you!')">Donate here</button>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center">
+				<h1>Support Our Cause</h1>
+				<p>Your donation will help us to continue our mission.</p>
+				<form action="payment-section.html">
+					<button type="submit" class="btn btn-lg btn-primary">Donate Now</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!-- include jQuery and Bootstrap JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
