@@ -1,37 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Petshop</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Pet Shop</title>
+	<!-- include Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		.pet-container {
+			margin: 50px auto;
+			max-width: 800px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.pet-card {
+			margin: 20px;
+			max-width: 300px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			border-radius: 5px;
+			overflow: hidden;
+		}
+		.pet-card img {
+			max-width: 100%;
+			height: auto;
+		}
+		.pet-card-body {
+			padding: 10px;
+			text-align: center;
+		}
+		.pet-card-body h2 {
+			font-size: 24px;
+			margin: 0 0 10px;
+		}
+		.pet-card-body p {
+			font-size: 16px;
+			margin: 0 0 10px;
+		}
+		.pet-card-button {
+			margin-top: 10px;
+		}
+	</style>
 </head>
 <body>
-    <header>
-        <h1>Petshop</h1>
-    </header>
-    <main>
-        <div class="item">
-            <img src="https://cdn11.bigcommerce.com/s-lmdkge2gql/images/stencil/1280x1280/products/4350/5129/Whiskas%20Complete%20Chicken__69188.1651792692.jpg?c=1" alt="Cat Food">
-            <h2>Cat Food</h2>
-            <p>Premium quality cat food for your feline friend.</p>
-            <p>£10.99</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="item">
-            <img src="https://cdn.shopify.com/s/files/1/0582/2047/8653/products/gipet6029a_1_1800x1800.jpg?v=1669983332" alt="Dog Toy">
-            <h2>Dog Toy</h2>
-            <p>A fun and durable toy for your dog to play with.</p>
-            <p>£5.99</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="item">
-            <img src="https://m.media-amazon.com/images/I/51ZIxpmdMfL._AC_.jpg" alt="Fish Tank">
-            <h2>Fish Tank</h2>
-            <p>A beautiful and spacious fish tank for your aquatic pets.</p>
-            <p>£50.00</p>
-            <button>Add to Cart</button>
-        </div>
-    </main>
-    <script src="script.js"></script>
-</body>
-</html>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Pet Shop</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Dogs</a></li>
+					<li><a href="#">Cats</a></li>
+					<li><a href="#">Birds</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+			<div class="pet-container">
+				<div class="pet-card">
+					<img src="https://via.placeholder.com/300x200" alt="Pet">
+					<div class="pet-card-body">
+						<h2>Dog</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<a href="#" class="btn btn-primary pet-card-button">Adopt</a>
+					</div>
+				</div>
+				<div class="pet-card">
+					<img src="https://via.placeholder.com/300x200" alt="Pet">
+					<div class="pet-card-body">
+						<h2>Cat</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<a href="#" class="btn btn-primary pet-card-button">Adopt</a>
+					</div>
+				</div>
+				<div class="pet-card">
+					<img src="https://via.placeholder.com/300x200" alt="Pet">
+					<div class="pet-card-body">
+						<h2>Bird</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<a href="#" class="btn btn-primary pet-card-button">Adopt</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container text-center">
+			
