@@ -37,3 +37,50 @@ items.forEach(item => {
     `;
     main.appendChild(div);
 });
+
+// Select the form element
+const form = document.querySelector('form');
+
+// Add an event listener to the form submit event
+form.addEventListener('submit', event => {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+
+  // Select the form inputs
+  const amountInput = document.querySelector('#amount');
+  const currencyInput = document.querySelector('#currency');
+  const cardInput = document.querySelector('#card');
+  const expiryInput = document.querySelector('#expiry');
+  const cvvInput = document.querySelector('#cvv');
+
+  // Validate the form inputs
+  let isValid = true;
+
+  if (amountInput.value <= 0) {
+    alert('Please enter a valid donation amount.');
+    isValid = false;
+  }
+
+  if (!cardInput.value.match(/^\d{16}$/)) {
+    alert('Please enter a valid card number.');
+    isValid = false;
+  }
+
+  if (!expiryInput.value.match(/^\d{2}\/\d{2}$/)) {
+    alert('Please enter a valid expiration date.');
+    isValid = false;
+  }
+
+  if (!cvvInput.value.match(/^\d{3}$/)) {
+    alert('Please enter a valid CVV.');
+    isValid = false;
+  }
+
+  if (isValid) {
+    // Display a confirmation message
+    alert(`Thank you for your donation of ${amountInput.value} ${currencyInput.value}!`);
+
+    // Reset the form inputs
+    form.reset();
+  }
+});
