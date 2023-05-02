@@ -3,8 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+			background-image: url("https://i.cbc.ca/1.5077459.1553886010!/fileImage/httpImage/pets.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
 
-/* Style the header */
 header {
   background-color: #1abc9c;
   padding: 20px;
